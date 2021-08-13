@@ -1,7 +1,18 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+@font-face {
+    font-family: 'FonteLogo';
+    src: url('../_fonts/bubblegum-sans-regular.otf');
+}
 body{
     background-color: #dddddd;
     color: rgba(0, 0, 0, 1);
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
 }
 p{
     text-align: justify;
@@ -33,7 +44,6 @@ figure.foto-legenda:hover figcaption{
     opacity: 1;
 }
 /* menu */
-/* id é sempre # e nome */
 nav#menu {
     display: block;
 }
@@ -43,15 +53,14 @@ nav#menu ul {
     text-transform: uppercase;
     position: absolute;
     top: -20px;
-    left: 1160px;
+    left: 1000px;
 }
-
 nav#menu li{
     display: inline-block;
-    position:relative   ;
+    position: relative;
     background-color: #dddddd;
-    padding: 10px;
-    margin: 2px;
+    padding: 1px 1px 1px 1px;
+    margin: 1px 10px 1px 1px;
     transition: background-color 1s;
 }
 nav#menu h1{
@@ -68,16 +77,97 @@ nav#menu a:hover{
     color: white;
     text-decoration: underline;
 }
+/* corpo*/
+
+section#corpo {
+    display: block;
+    width: 400px;
+    float: left;
+    border-right: 1px solid #606060;
+    padding: 0px 35px 0px 35px;
+}
+table#tabela {
+    border: 1px solid #606060;
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+table#tabela caption{
+    color: #888888;
+    font-size: 13pt;
+    font-weight: bolder;
+}
+table#tabela caption span {
+    display: block;
+    float: right;
+    font-size: 8pt;
+    margin-top: 10px;
+    color: black; 
+}
+table#tabela td {
+    border: 1px solid #606060;
+    margin: 0px;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+table#tabela td.ce {
+    color: white;
+    background-color: #606060;
+    text-align: right;
+    font-weight: bold;
+}
+table#tabela td.cd {
+    color: black;
+    background-color: #cecece;
+    text-align: left;
+}
+aside#lateral {
+    display: block;
+    width: 400px;
+    float: right;
+}
+
+footer#rodape {
+    clear: both;
+    border-top: 1px #606060 solid;
+
+}
+footer#rodape p{
+    text-align: center;
+}
+
 /* interface*/
 div#interface {
-    width: 1000px;
+    width: 900px;
     background-color: #ffffff;
     margin: -20px auto 10px auto;
     box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
     padding: 10px 10px 10px 10px;
 }
+/* cabecalho*/
+header#cabecalho{
+    border-bottom: 1px #606060 solid;
+    height: 150px;
+    background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 80px;
+}
 header#cabecalho img#icone {
-    position: relative;
-    left: 800px;
-    top: -80px;
+    position: absolute;
+    left: 1580px;
+    top: 70px;
+}
+header#cabecalho h1{
+    font-family: FonteLogo, sans-serif;
+    font-size: 30px;
+    color: #606060;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
+    padding: 0;
+    margin-bottom: 0px;
+}
+header#cabecalho h2{
+    font-family: 'Cinzel', serif;
+    font-size: 15pt;
+    color: #888888;
+    padding: 0;
+    margin-top: 0px;
 }
